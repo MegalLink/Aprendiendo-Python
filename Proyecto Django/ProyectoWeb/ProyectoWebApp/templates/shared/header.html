@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand brand" href="/"
+      >Heladeria <span>Tentazione <i class="fas fa-ice-cream"></i></span
+    ></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+        <li class="nav-item {% if request.path == '/' %} active {% endif %}">
+          <a class="nav-link" href="{% url 'Inicio' %}">Inicio <i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li class="nav-item {% if request.path == '/productos/' %} active {% endif %}">
+          <a class="nav-link" href="{% url 'Productos' %}">Productos <i class="fas fa-ice-cream"></i></a>
+        </li>
+        <li class="nav-item {% if request.path == '/nosotros/' %} active {% endif %}">
+          <a class="nav-link" href="{% url 'Nosotros' %}">Quienes somos <i class="fas fa-users"></i></a>
+        </li>
+        <li class="nav-item {% if request.path == '/contacto/' %} active {% endif %}">
+          <a class="nav-link" href="{% url 'Contacto' %}">Contacto <i class="fas fa-phone"></i></a>
+        </li>
+        <!-- <li class="nav-item {% if request.path == '/login/' %} active {% endif %}">
+          <a class="nav-link" href="/{% url 'Inicio' %}">Iniciar Sesion<i class="fas fa-sign-in-alt"></i></a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>

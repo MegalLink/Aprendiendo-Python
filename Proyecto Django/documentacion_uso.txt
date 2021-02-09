@@ -1,0 +1,36 @@
+django-admin startproject Heladeria para crearel proyecto
+
+python manage.py runserver para levantar el servidor
+python manage.py startapp NombreApp   para crear una aplicacion con backen
+la nomenclatura de . de django tiene este orden Diccionario->Atributo->Metodo->Indice para hacer llamadas
+osea que si quiero usar un metodo se usa directamente con . sin ()
+Hay que tener cuidado con los espacios al hacer programar en el template
+{%i f logged == True %} asi esta bien
+{%i f logged==True %} asi esta mal
+aqui se pueden ver los filtros https://docs.djangoproject.com/en/3.0/ref/templates/builtins/
+Para el proyecto usaremos boostrap 5 que no usa jquery
+https://v5.getbootstrap.com/docs/5.0/components/alerts/
+https://docs.djangoproject.com/en/3.1/topics/http/urls/
+
+
+
+python manage.py makemigrations
+python  manage.py migrate apra que funcione con sqllite3
+
+python manage.py createsuperuser
+jeffadmin
+alexresidentevilmega@gmail.com
+admin1234
+
+Comandos para manejar el modelo
+insertar  
+Productos(nombre='Helado',seccion='conos').save()
+Productos.objects.create(nombre='Helado',seccion='conos')
+
+para hacer update primero obtengo la referencia del objeto
+Producto.objects.get(id=6)
+y despues cambio con .sabe()
+y si quiero borrar es .delete()
+Obtener varios registros en este caso todos
+Producto.objects.all()
+

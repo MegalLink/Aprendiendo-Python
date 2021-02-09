@@ -1,0 +1,56 @@
+{% extends "app.html" %} 
+{% block title %} Inicio {% endblock %} 
+
+{% block content %}
+
+<div class="container">
+  <div class="row my-5">
+    <div class="col-md-8">
+    <div>
+        <div class="row">
+            {% for producto in productos %}
+          
+              <div class="card  col-md-3 m-2" data-aos="fade-up">
+                <img src="{{producto.imgUrl}}" alt="" class="card-img-top  img-fluid" style="height: 20rem;">
+                <p class="mx-0 text-light bg-danger p-3 text-center">
+                    Precio
+                    <span class="badge bg-naranja px-3">$ {{producto.precio}}</span>
+                  </p>
+                <div class="card-body">
+                  <h5 class="card-title">{{producto.nombre}}</h5>
+                  
+                  <p class="card-text">{{producto.descripcion}}</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            
+            {% endfor %}
+        </div>
+    </div>
+          
+        
+       
+    </div>
+    <div class="col-md-4">
+      <h2>Carrito de compras <i class="fas fa-shopping-cart"></i></h2>
+
+      <div class="container">
+        <div *ngFor="let prod of pedido.productos">
+          <p>
+            Producto
+            <button class="btn btn-danger btn-sm">
+              <i class="fas fa-times"></i>
+            </button>
+          </p>
+        </div>
+      </div>
+      <p class="alert alert-primary">Total pedido: 12</p>
+
+      <button class="btn btn btn-outline-danger btn-block">
+        Cancelar <i class="fas fa-trash-alt"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+
+
+   [ {    
+    "index": 0,
+    "nombre_cancion": "Rara bien",
+    "autor_cancion": "Rupatrupa",
+    "genero": "Easy Listening",
+    "acordes": [
+    "Dm",
+    "Am",
+    "Em",
+    "Dm"
+    ]
+    },
+    {
+    
+    "index": 1,
+    "nombre_cancion": "Kids",
+    "autor_cancion": "MGMT",
+    "genero": "Rock psicodelico, Synth pop, Pop psicodelico, Neopsicodelia",
+    "acordes": [
+    "F#m",
+    "D",
+    "A",
+    "Cm"
+    ]
+    }
+]
+
+

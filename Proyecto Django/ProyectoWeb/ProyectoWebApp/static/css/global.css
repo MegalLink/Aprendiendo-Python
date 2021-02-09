@@ -1,0 +1,134 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    --color-rosado: #ea5252;
+    --color-naranja:#f4c150;
+    --color-gris:#cdd0d6;
+    background-color: var(--color-gris);
+  }
+  .logo{
+      height: 50px;
+      width: 50px;
+  }
+  .navbar-brand,.brand{
+      margin-left: 20px;
+      font-size: 40;
+      font-weight: 900;
+  }
+  .navbar-brand span,.brand span{
+      color: var(--color-rosado);
+  }
+  .navbar-brand::after,.brand::after{
+
+      content: '';
+      margin-top: 5px;
+      display: block;
+      width: auto;
+      height: 4px;
+      background: var(--color-naranja);
+
+  }
+  .bg-naranja{
+      background-color: var(--color-naranja)!important;
+  }
+  .bg-rosado{
+    background-color: var(--color-rosado)!important;
+}
+  .navbar-nav .nav-item .nav-link{
+      font-size: larger;
+      color:  var(--color-naranja)!important;
+  }
+  .navbar-nav .active{
+    background-color: var(--color-rosado);
+    border-radius: 10px;
+      
+}
+.navbar-nav .nav-item .nav-link{
+    color: var(--color-naranja);
+}
+.active .nav-link{
+   color: var(--color-rosado)!important;  
+}
+.nav-link:hover{
+    color: var(--color-rosado)!important;
+}
+.main-container{
+    height: 85vh;
+    background-image: url("https://images.pexels.com/photos/3631/summer-dessert-sweet-ice-cream.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.main-row,.main-row .col-md-6{
+    height: 100%;
+   
+}
+.color-naranja{
+color: var(--color-naranja);
+}
+.color-rosado{
+    color: var(--color-rosado);
+    }
+.main-card{
+   margin-top: 200px;
+   font-weight: 1000;
+   background-color: transparent;
+   border-color: var(--color-naranja);
+   border-width: medium;
+}
+footer{
+    margin-top: 40px;
+    background-color: white;
+}
+
+
+@media (max-width:768px){
+    
+    .main-container{
+        background-image: url("https://images.pexels.com/photos/1343465/pexels-photo-1343465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        height: min-content; 
+       padding-bottom: 20px;
+    }
+    .main-card{
+        margin-top: 10px;
+        font-weight: 1000;
+        background-color: transparent;
+     }
+
+  }
+  .imagen-superior{
+    background-image: url("https://images.pexels.com/photos/1352271/pexels-photo-1352271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+
+  }
+  .imagen-inferior{
+    
+    background-image: url("https://images.pexels.com/photos/3625371/pexels-photo-3625371.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size: cover;
+  }
+
+  .helados{
+    background-image: url("https://2.bp.blogspot.com/-6q4wtCuK9Gs/W2DTq62aASI/AAAAAAAAEFk/OlTnO4yE8rscs3AEtQnJKBBg5O-l_vpaQCLcBGAs/s1600/helado.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+  }
+ 
+  .obten-helados{
+    height: 100vh;
+  }
+  
+  .obten-helados .contenido h2{
+    font-size: 3.5rem;
+  }
+  .obten-helados .contenido p{
+    font-size: 2rem;
+  }
+  .obten-helados .contenido a{
+    background-color:var(--color-naranja);
+    color: white;
+  }
+  .obten-helados .contenido a:hover{
+    background-color: #fb0000;
+    color: white;
+  }
